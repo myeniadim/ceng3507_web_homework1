@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+
+        <!--Header Section-->
+
+        <header>
+            <div class="header-container">     <!--Display Flex-->
+                <div class="header-container-left">  <!--Left Image-->
+                    <img src="./assets/logo.svg" alt="">
+                </div>
+                <div class="header-container-right">  <!--Right Text-->
+                    <div>Building a Stronger Future Together</div>
+                </div>
+            </div>
+        </header>
+
+        <!--Main Section-->
+
+        <main>
+            <div class="main-container"> <!--Display Flex Column-->
+                <div class="main-container-header"> <!--Display Flex Row-->
+                    <h1>Welcome to Liberty Bank</h1>
+                </div>
+                <h2>Make Your Dreams Come True with a Special Loan Rate of 1.29%</h2>
+                <div class="main-container-firstcontent"> <!--Display Flex Row-->
+                    <div class="main-container-firstcontent-left"> <!--Display Flex Column-->
+                        <img src="./assets/loan.png" alt="">
+                    </div>
+                    <div class="main-container-firstcontent-right"> <!--Display Flex Column-->
+                        <p>Don’t put your dreams on hold! With our low-interest loan, you can take the first step to making them a reality. Whether it’s for home renovation, education, or a vacation, we offer flexible payment options to make your life easier.</p>
+                        <h3>Attractive Loan Terms:</h3>
+                        <ul>
+                            <li>Interest Rate: Starting from just 1.29 <span><i class="fa-solid fa-percent"></i></span> monthly, making your loan more affordable.</li>
+                            <li>Up to 36 months repayment period—choose the plan that suits you best.</li>
+                            <li>Apply for a loan of up to 200,000 <span><i class="fa-solid fa-turkish-lira-sign"></i></span>.</li>
+                        </ul>
+                        <h3>Sample Payment Plan</h3>
+                        <ul>
+                            <li>Loan Amount: 50,000 <span><i class="fa-solid fa-turkish-lira-sign"></i></span></li>
+                            <li>Term: 24 Months</li>
+                            <li>Monthly Interest Rate: 1.29<span><i class="fa-solid fa-percent"></i></span></li>
+                            <li>Monthly Installment: 2,465 <span><i class="fa-solid fa-turkish-lira-sign"></i></span></li>
+                            <li>Total Repayment: 59,160 <span><i class="fa-solid fa-turkish-lira-sign"></i></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <button>Apply Now</button> <!--Apply Now Button-->
+                <h2>Get Your Liberty Bank Credit Card Today!</h2>
+                <div class="main-container-secondcontent"> <!--Display Flex Row-->
+                    <div class="main-container-secondcontent-left"> <!--Left Image-->
+                        <img src="./assets/creditcard.png" alt=""> 
+                    </div>
+                    <div class="main-container-secondcontent-right"> <!--Right Text-->
+                        <p>Experience the freedom of a Liberty Bank Credit Card. Enjoy exclusive benefits, rewards, and a low-interest rate. Whether you're shopping, dining, or traveling, our credit card offers you the convenience and security you need.</p>
+                        <h3>Exclusive Benefits:</h3>
+                        <ul>
+                            <li>Low-interest rate of just 1.5% monthly.</li>
+                            <li>Earn reward points on every purchase and redeem them for exciting gifts.</li>
+                            <li>Zero annual fees for the first year.</li>
+                            <li>24/7 customer support to assist you anytime, anywhere.</li>
+                        </ul>
+                        <h3>Sample Credit Card Plan</h3>
+                        <ul>
+                            <li>Credit Limit: 20,000 <span><i class="fa-solid fa-turkish-lira-sign"></i></span></li>
+                            <li>Monthly Interest Rate: 1.5<span><i class="fa-solid fa-percent"></i></span></li>
+                            <li>Minimum Payment: 500 <span><i class="fa-solid fa-turkish-lira-sign"></i></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <button>Apply for Credit Card</button> <!--Apply for Credit Card Button-->
+            </div>
+        </main>
+
+        <!--Left Bar Section-->
+
+        <div class="left"> <!--Display Flex Column-->
+            <div class="left-container"> <!--Display Flex Column-->
+                <h3>Buying Exchange Rate</h3>
+                <div class="left-container-currency-box">
+                    <div class="left-container-currency-box-table"> 
+                        <table> <!--Table for Exchange Rate-->
+                            <thead>
+                                <tr>
+                                    <th>Currency</th>
+                                    <th>Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>USD (<span class="currency"><i class="fa-solid fa-dollar-sign"></i></span>)</td>
+                                    <td>34,30 <span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="up"><i class="fa-solid fa-caret-up"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>EUR (<span class="currency"><i class="fa-solid fa-euro-sign"></i></span>)</td>
+                                    <td>37,16 <span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="down"><i class="fa-solid fa-caret-down"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>GBP (<span class="currency"><i class="fa-solid fa-pound-sign"></i></span>)</td>
+                                    <td>44,34 <span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="up"><i class="fa-solid fa-caret-up"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>JPY (<span class="currency"><i class="fa-solid fa-yen-sign"></i></span>)</td>
+                                    <td>0,22 <span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="up"><i class="fa-solid fa-caret-up"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>RUB (<span class="currency"><i class="fa-solid fa-ruble-sign"></i></span>)</td>
+                                    <td>0,34 <span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="down"><i class="fa-solid fa-caret-down"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>CHF (<span class="currency"><i class="fa-solid fa-franc-sign"></i></span>)</td>
+                                    <td>39,70 <span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="down"><i class="fa-solid fa-caret-down"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>BTC (<span class="currency"><i class="fa-solid fa-bitcoin-sign"></i></span>)</td>
+                                    <td>2.369.415,75<span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="up"><i class="fa-solid fa-caret-up"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>ETH (<span class="currency"><i class="fa-brands fa-ethereum"></i></span>)</td>
+                                    <td>2.369.415,75<span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="down"><i class="fa-solid fa-caret-down"></i></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <a href="index.html"><button>Buy Currency</button></a>
+                <h3>Selling Exchange Rate</h3>
+                <div class="left-container-currency-box"> <!--Display Flex Column-->
+                    <div class="left-container-currency-box-table"> 
+                        <table> <!--Table for Exchange Rate-->
+                            <thead> 
+                                <tr>
+                                    <th>Currency</th>
+                                    <th>Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>USD (<span class="currency"><i class="fa-solid fa-dollar-sign"></i></span>)</td>
+                                    <td>34,31 <span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="down"><i class="fa-solid fa-caret-down"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>EUR (<span class="currency"><i class="fa-solid fa-euro-sign"></i></span>)</td>
+                                    <td>37,22 <span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="up"><i class="fa-solid fa-caret-up"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>GBP (<span class="currency"><i class="fa-solid fa-pound-sign"></i></span>)</td>
+                                    <td>44,43 <span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="up"><i class="fa-solid fa-caret-up"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>JPY (<span class="currency"><i class="fa-solid fa-yen-sign"></i></span>)</td>
+                                    <td>0,22 <span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="down"><i class="fa-solid fa-caret-down"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>RUB (<span class="currency"><i class="fa-solid fa-ruble-sign"></i></span>)</td>
+                                    <td>0,35 <span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="down"><i class="fa-solid fa-caret-down"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>CHF (<span class="currency"><i class="fa-solid fa-franc-sign"></i></span>)</td>
+                                    <td>39,72 <span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="up"><i class="fa-solid fa-caret-up"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>BTC (<span class="currency"><i class="fa-solid fa-bitcoin-sign"></i></span>)</td>
+                                    <td>2.369.415,40<span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="down"><i class="fa-solid fa-caret-down"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td>ETH (<span class="currency"><i class="fa-brands fa-ethereum"></i></span>)</td>
+                                    <td>2.369.415,75<span class="currency"><i class="fa-solid fa-turkish-lira-sign"></i></span><span>&nbsp&nbsp</span><span id="up"><i class="fa-solid fa-caret-up"></i></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <a href="index.html"><button>Sell Currency</button></a>
+            </div>
+
+        </div>
+
+        <!--Right Bar Section-->
+        <div class="right">
+            <div class="right-container"> <!--Display Flex Column-->
+                <div class="right-container-profile-box"> <!--Display Flex Column-->
+                    <div class="right-container-profile"> <!--Display Flex Row-->
+                        <div>Mert Yeniadım</div>
+                        <div><img src="./assets/profile.jpg" alt=""></div>
+                    </div>
+                    <div><i class="fa-regular fa-id-card"></i> Account Id: 123456789</div>
+                    <div><i class="fa-solid fa-wallet"></i> Balance: 23.768,34 <i class="fa-solid fa-turkish-lira-sign"></i></div>
+                    <button>Deposit</button>
+                    <button>Withdraw</button>
+                    <button>Pay bill</button>
+                    <button>Send Money</button>
+                    <button>Log Out</button>
+                </div>
+                <div class="right-container-transactions">
+                    <h3>Recent Transactions</h3>
+                    <div class="right-container-transactions-box"> <!--Display Flex Column-->
+                        <table class="righ-container-transactions-table">
+                            <thead>
+                                <tr>  <!--Display Flex Row-->
+                                    <th>Type</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Deposit</td>
+                                    <td class="positive"> 500,00 <i class="fa-solid fa-turkish-lira-sign"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Withdraw</td>
+                                    <td class="negative">200,00 <i class="fa-solid fa-turkish-lira-sign"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td>Sending Money</td>
+                                    <td class="negative">300,00 <i class="fa-solid fa-turkish-lira-sign"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Sell Currency</td>
+                                    <td class="positive">300,00 <i class="fa-solid fa-dollar-sign"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Electricity Bill</td>
+                                    <td class="negative">300,00 <i class="fa-solid fa-turkish-lira-sign"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Buy Currency</td>
+                                    <td class="negative">300,00 <i class="fa-solid fa-euro-sign"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td>Sending Money</td>
+                                    <td class="positive">300,00 <i class="fa-solid fa-turkish-lira-sign"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button>See Details</button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <!--Footer Section-->
+        <footer>
+            <div class="footer-container"> <!--Display Flex Column-->
+                <div class="footer-container-first-content"> <!--Display Flex Row-->
+                    <div class="footer-container-first-content-left">
+                        Get connected with us on social:
+                    </div>
+                    <div class="footer-container-first-content-right">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-container-second-content"> <!--Display Flex Row-->
+                    <div class="footer-container-second-content-column"> <!--Display Flex Column-->
+                        <div>Liberty Bank</div>
+                        <hr>
+                        <div>Building a Stronger</div>
+                        <div>Future Together</div>
+                    </div>
+                    <div class="footer-container-second-content-column"> <!--Display Flex Column-->
+                        <div>Quick Links</div>
+                        <hr>
+                        <div><a href="">Home</a></div>
+                        <div><a href="">About Us</a></div>
+                        <div><a href="">Services</a></div>
+                        <div><a href="">Contact</a></div>
+                    </div>
+                    <div class="footer-container-second-content-column"> <!--Display Flex Column-->
+                        <div>Services</div>
+                        <hr>
+                        <div><a href="">Loans</a></div>
+                        <div><a href="">Credit Cards</a></div>
+                        <div><a href="">Exchange Rates</a></div>
+                        <div><a href="">Savings</a></div>
+                    </div>
+                    <div class="footer-container-second-content-column"> <!--Display Flex Column-->
+                        <div>Contact Us</div>
+                        <hr>
+                        <div><i class="fa-solid fa-map-marker-alt"></i> 123 Liberty Street, New York, USA</div>
+                        <div><i class="fa-solid fa-phone"></i> +1 123 456 7890</div>
+                        <div><i class="fa-solid fa-envelope"></i> liberty@bank.com</div>
+                    </div>
+                </div>
+                <div class="footer-container-third-content">
+                    © 2023 Liberty Bank. All Rights Reserved.
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+</html>

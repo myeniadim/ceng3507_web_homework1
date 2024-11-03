@@ -1,0 +1,456 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*----------------------------------------*/
+
+/*Responsive Holy Grail Template*/
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "left main right"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header{
+    grid-area: header;
+    background-color: #1a3d5e; 
+    color: white;
+    padding: 1rem;
+    margin: 0;
+}
+
+main{
+    grid-area: main;
+    padding: 1rem;
+    background-color: #e8f0ff; 
+}
+
+.left{
+    grid-area: left;
+    background-color: #3a6ea5; 
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.right{
+    grid-area: right;
+    background-color: #3a6ea5; 
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color:  #2a4d69 ; 
+    color: white;
+    padding: 1rem;
+    overflow-y: visible;
+}
+
+@media (max-width: 768px) {     /*For tablet and smaller devices*/
+    .container {
+        grid-template-areas: 
+            "header"            /*Head*/
+            "right"             /*Profile Part*/
+            "main"              /*Main Content*/             
+            "left"              /*Currency Part*/
+            "footer";           /*Footer*/
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto auto;
+    }
+}
+
+@media (min-width : 769px) {     /*For tablet and larger devices*/
+    main{
+        overflow-y: scroll;
+    }
+}
+/*Responsive Holy Grail Template*/
+
+/*----------------------------------------*/
+
+/*CSS FOR HEADER PART*/
+
+.header-container {
+    box-sizing: border-box;
+    margin: 0;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container-left{
+    box-sizing: border-box;
+}
+
+.header-container-left img{
+    width: 100%;
+    height: auto;
+    max-width: 10rem;
+}
+
+.header-container-right{
+    box-sizing: border-box;
+}
+
+.header-container-right div{
+    font-weight: 400;
+}
+
+/*CSS FOR HEADER PART*/
+
+/*----------------------------------------*/
+
+/*CSS FOR RIGHT PART*/
+
+
+.right-container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+}
+
+.right-container-profile-box{
+    box-sizing: border-box;
+    border: 0.1rem solid black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 1rem;
+    border-radius: 8%;
+}
+
+.right-container-profile{
+    box-sizing: border-box;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-container-profile div{
+    font-size: 1.5rem;
+}
+
+.right-container-profile img{
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 2.5rem;
+}
+
+
+.right-container-transactions-box{
+    box-sizing: border-box;
+    border: 0.1rem solid black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    border-radius: 8%;
+}
+
+.right-container-transactions h3{
+    padding: 0;
+    text-align: center;
+}
+
+.right-container-transactions-box tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.right-container-transactions-box button{
+    margin-top: 1rem;
+}
+
+
+.right-container button:hover{
+    background-color: #2a4d69; 
+}
+
+.right-container button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #1a3d5e; 
+    color: white;
+    font-size: 1rem;
+}
+
+.right-contaier-transactions h3{
+    text-align: center;
+}
+
+.positive{
+    color: #7ED4AD;
+}
+
+.negative{
+    color:#D76C82
+}
+
+/*CSS FOR RIGHT PART*/
+
+/*----------------------------------------*/
+
+/*CSS FOR LEFT PART*/
+
+.left-container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left-container h3{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.left-container-currency-box{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 8%;
+    padding: 1.3rem;
+}
+
+.left-container-currency-box-table table{
+    width: 100%;
+
+}
+
+.left-container-currency-box-table th, td{
+    padding: 0.2rem;
+}
+
+
+.left-container button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #1a3d5e; 
+    color: white;
+    font-size: 1rem;
+}
+
+.left-container button:hover{
+    background-color: #2a4d69; 
+}
+
+#up{
+    color: #7ED4AD;
+}
+
+#down{
+    color: #D76C82;
+}
+
+.currency{
+    padding: auto;
+}
+
+/*CSS FOR LEFT PART*/
+
+/*----------------------------------------*/
+
+/*CSS FOR MAIN PART*/
+
+.main-container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.main-container-header h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container h2{
+    text-align: center;
+    padding: 0;
+}
+
+.main-container-firstcontent{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+.main-container-firstcontent-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container-firstcontent-left img{
+    width: 100%;
+}
+
+.main-container-firstcontent-right{
+    float: right;
+    max-width: 50%;
+}
+
+.main-container-secondcontent{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+.main-container-secondcontent-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container-secondcontent-left img{
+    width: 100%;
+}
+
+.main-container-secondcontent-right{
+    float: right;
+    max-width: 50%;
+}
+
+
+.main-container button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #1a3d5e; 
+    color: white;
+    font-size: 1rem;
+    margin: auto;
+    font-family: 'Oswald', sans-serif;;
+}
+
+.main-container button:hover{
+    background-color: #2a4d69; 
+}
+
+/*CSS FOR MAIN PART*/
+
+/*----------------------------------------*/
+
+/*CSS FOR FOOTER PART*/
+
+.footer-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #2a4d69; /* New background color */
+    color: white; /* New text color */
+}
+
+.footer-container-first-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #1a3d5e; /* New border color */
+}
+
+.footer-container-first-content-left {
+    font-size: 1.2rem; /* New font size */
+}
+
+.footer-container-first-content-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-container-first-content-right a {
+    color: white; /* New icon color */
+    font-size: 1.5rem; /* New icon size */
+}
+
+.footer-container-second-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.footer-container-second-content-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-container-second-content-column div {
+    margin: 0.5rem 0;
+}
+
+.footer-container-second-content-column div a{
+    color: white; /* New link color */
+    text-decoration-line: none;
+}
+
+.footer-container-second-content-column hr {
+    border: 0;
+    height: 1px;
+    background: #1a3d5e; /* New hr color */
+    margin: 0.5rem 0;
+}
+
+.footer-container-third-content {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #1a3d5e; /* New border color */
+}
+
+/*CSS FOR FOOTER PART*/
+
+/*----------------------------------------*/
